@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Professional portfolio showcasing web development projects and skills" />
+        <title>Web Developer Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header role="banner">
+            <nav role="navigation" class="nav-container">
+                <button aria-label="Toggle navigation" class="nav-toggle" id="navToggle">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about-me" class="about-section">
+                <h1>Welcome to My Portfolio</h1>
+                <article>
+                    <h2>About Me</h2>
+                    <p>
+                        I'm a passionate web developer focused on creating accessible, user-friendly websites and
+                        applications. With expertise in front-end technologies, I strive to build engaging digital
+                        experiences.
+                    </p>
+                </article>
+            </section>
+
+            <section id="projects" class="projects-section">
+                <h2>My Projects</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card" data-category="frontend">
+                        <figure>
+                            <img src="project1.jpg" alt="E-commerce website project screenshot" class="project-image" />
+                            <figcaption>E-commerce Website</figcaption>
+                        </figure>
+                        <h3>E-commerce Platform</h3>
+                        <p>A responsive e-commerce platform built with modern web technologies.</p>
+                    </article>
+                    <article class="project-card" data-category="backend">
+                        <figure>
+                            <img src="project2.jpg" alt="API development project screenshot" class="project-image" />
+                            <figcaption>REST API Service</figcaption>
+                        </figure>
+                        <h3>REST API Service</h3>
+                        <p>A scalable REST API service built with Node.js and Express.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="skills" class="skills-section">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML5 & Semantic Web</li>
+                    <li>CSS3 & Responsive Design</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                    <li>Git & Version Control</li>
+                </ul>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2>Contact Me</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required aria-required="true" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required aria-required="true" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required aria-required="true"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+            <p>&copy; 2024 Portfolio Website. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
